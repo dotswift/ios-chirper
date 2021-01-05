@@ -18,13 +18,13 @@ struct ContentView: View {
                         Image(systemName:"magnifyingglass")
                         Text("Find Loan")
                     }
-                Text("Message")
+                ConversationsView()
                     .tabItem {
                         Image(systemName:"envelope")
                         Text("Forclose Restaurant")
                     }
             }
-            .navigationBarTitle("Fuck")
+            .navigationBarTitle("Shitter")
             .navigationBarTitleDisplayMode(.inline)
         }
     }
