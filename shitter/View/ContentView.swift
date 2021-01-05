@@ -8,7 +8,7 @@ struct ContentView: View {
             
             TabView {
                 
-                Text("Feed")
+                FeedView()
                     .tabItem {
                         Image(systemName:"house")
                         Text("Shilling's House")
