@@ -21,7 +21,7 @@ struct ConversationCell: View {
             }
             Divider()
         }
-
+        
     }
 }
 
