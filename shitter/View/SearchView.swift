@@ -7,12 +7,15 @@ struct SearchView: View {
         
         ScrollView {
             SearchBar(text: $searchText )
+                .padding()
             
-            VStack{
-                ForEach(0..<19){ _ in
-                    Text("add users here...")
+            VStack(alignment: .leading) {
+                ForEach(0..<10){ _ in
+                    // horizontal spacer "shorthand" for left hand alignment (space on right)
+                    HStack { Spacer() }
+                    UserCell()
                 }
-            }
+            }.padding(.leading)
         }
     }
 }
