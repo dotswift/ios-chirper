@@ -2,9 +2,10 @@ import SwiftUI
 
 struct TweetCell: View {
     var body: some View {
-        VStack {
+        VStack(alignment: .leading) {
             
-            HStack(alignment: .top){
+            HStack(alignment: .top, spacing: 12){ // spacing creates room between picture and username/text
+                
                 Image("batman")
                     .resizable() // default image in Swift UI gets actual image size. This fixes that.
                     .scaledToFit()
@@ -66,6 +67,7 @@ struct TweetCell: View {
             .foregroundColor(.pink)
             Divider() // divider line under cell automatically rendered
         }
+        .padding(.leading, -16)
     }
 }
 
