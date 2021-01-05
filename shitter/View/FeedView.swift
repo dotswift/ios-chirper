@@ -4,7 +4,12 @@ struct FeedView: View {
     var body: some View {
         ZStack(alignment: .bottomTrailing){
             ScrollView{
-                
+                // TODO: LazyVStack only load cells on an as-needed basis "lazy"
+                VStack{
+                    ForEach(0..<20){ _ in
+                        TweetCell()
+                    }
+                }.padding()
             }
             
             Button(action: {}, label: {

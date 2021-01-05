@@ -12,6 +12,7 @@
 		C4B733A325A3CED600DD5B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B733A225A3CED600DD5B46 /* Assets.xcassets */; };
 		C4B733A625A3CED600DD5B46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B733A525A3CED600DD5B46 /* Preview Assets.xcassets */; };
 		C4B733B525A3F4C200DD5B46 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B733B425A3F4C200DD5B46 /* FeedView.swift */; };
+		C4B733BB25A3F9EB00DD5B46 /* TweetCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B733BA25A3F9EB00DD5B46 /* TweetCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		C4B733A525A3CED600DD5B46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C4B733A725A3CED600DD5B46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C4B733B425A3F4C200DD5B46 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
+		C4B733BA25A3F9EB00DD5B46 /* TweetCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 			children = (
 				C4B733A025A3CED100DD5B46 /* ContentView.swift */,
 				C4B733B425A3F4C200DD5B46 /* FeedView.swift */,
+				C4B733BA25A3F9EB00DD5B46 /* TweetCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 				C4B733A125A3CED100DD5B46 /* ContentView.swift in Sources */,
 				C4B733B525A3F4C200DD5B46 /* FeedView.swift in Sources */,
 				C4B7339F25A3CED100DD5B46 /* shitterApp.swift in Sources */,
+				C4B733BB25A3F9EB00DD5B46 /* TweetCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
