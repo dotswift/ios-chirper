@@ -6,7 +6,7 @@ struct TweetCell: View {
             
             HStack(alignment: .top, spacing: 12){ // spacing creates room between picture and username/text
                 
-                Image("batman")
+                Image("shilling")
                     .resizable() // default image in Swift UI gets actual image size. This fixes that.
                     .scaledToFit()
                     .clipped()
@@ -16,17 +16,17 @@ struct TweetCell: View {
                 
                 VStack(alignment: .leading, spacing: 4) { // leading = left
                     HStack {
-                        Text("Bobby Lolli Jr.")
+                        Text("Brenden")
                             .font(.system(size: 14, weight : .semibold))
-                        Text("@bobbylolli •")
+                        Text("@letsgohoover07 •")
                             .foregroundColor(.gray)
                             .font(.system(size: 12, weight : .bold))
-                        Text("Dec '98")
+                        Text("Yesterday")
                             .foregroundColor(.gray)
                             .font(.system(size: 12, weight : .bold))
                     }
                     
-                    Text("We need to book more banquets to save the restaurant.")
+                    Text("Anyone want to play PS2?")
                 }
             }
             .padding(.bottom)

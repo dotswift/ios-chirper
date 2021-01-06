@@ -11,7 +11,7 @@ struct UserCell: View {
     var body: some View {
         // Need an HStack because we have image and text next to eachother (left /right)
         HStack(spacing: 12){
-            Image("venom-10")
+            Image("shilling")
                 .resizable()
                 .scaledToFill()
                 .clipped()
