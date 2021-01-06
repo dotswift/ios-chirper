@@ -1,19 +1,29 @@
 import SwiftUI
 
 struct ConversationsView: View {
+    // any time this state variable changes SwiftUI (being reactive) will re-execute code when variable is changed
+    // code can have a "dependency" on the $tate of this variable (see line 39)
+    @State var isShowingNewMessageView = false
+    
     var body: some View {
         ZStack(alignment: .bottomTrailing){
             ScrollView{
                 // TODO: LazyVStack only load cells on an as-needed basis "lazy"
                 VStack{
                     ForEach(0..<20){ _ in
-                        ConversationCell()
+                        NavigationLink(
+                            destination: Text("Chat View"),
+                            label: {
+                                ConversationCell()
+                            })
                         
                     }
                 }.padding()
             }
             
-            Button(action: {}, label: {
+            Button(action: {
+                self.isShowingNewMessageView.toggle()
+            }, label: {
                 Image(systemName: "envelope")
                     .resizable()
                     .scaledToFit()
@@ -25,6 +35,10 @@ struct ConversationsView: View {
             .foregroundColor(.white)
             .clipShape(Circle())
             .padding()
+            // when the isShowingNewMessageView variable is change this code is execuded again
+            .sheet(isPresented: $isShowingNewMessageView, content: {
+                SearchView()
+            })
         }
     }
 }

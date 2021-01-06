@@ -15,9 +15,13 @@ struct ConversationCell: View {
                         .font(.system(size: 14, weight: .semibold))
                     
                     Text("The restaurant is in dire straits, we need help.")
-                        .font(.system(size: 15))
+                        .font(.system(size: 14))
                         .lineLimit(2)
-                }.padding(.trailing) // trailing (opposite of leading)
+                }
+                .foregroundColor(.black) // fixes blue text from navigation link
+                .frame(height: 64) // manually set height of frame to help text wrapping
+                .padding(.trailing) // trailing (opposite of leading)
+                
             }
             Divider()
         }
