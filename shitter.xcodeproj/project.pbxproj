@@ -20,6 +20,7 @@
 		C4B733CC25A531C600DD5B46 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B733CB25A531C600DD5B46 /* ConversationCell.swift */; };
 		C4B733CF25A7F7F300DD5B46 /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B733CE25A7F7F300DD5B46 /* MessageInputView.swift */; };
 		C4B733D225A7F92D00DD5B46 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B733D125A7F92D00DD5B46 /* ChatView.swift */; };
+		C4B733D625A7FF6F00DD5B46 /* ChatBubble.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B733D525A7FF6F00DD5B46 /* ChatBubble.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		C4B733CB25A531C600DD5B46 /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
 		C4B733CE25A7F7F300DD5B46 /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
 		C4B733D125A7F92D00DD5B46 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		C4B733D525A7FF6F00DD5B46 /* ChatBubble.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubble.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,12 +122,21 @@
 		C4B733C625A5319F00DD5B46 /* Messages */ = {
 			isa = PBXGroup;
 			children = (
+				C4B733D425A7FF6600DD5B46 /* New Group */,
 				C4B733C725A531AB00DD5B46 /* ConversationsView.swift */,
 				C4B733CB25A531C600DD5B46 /* ConversationCell.swift */,
 				C4B733CE25A7F7F300DD5B46 /* MessageInputView.swift */,
 				C4B733D125A7F92D00DD5B46 /* ChatView.swift */,
+				C4B733D525A7FF6F00DD5B46 /* ChatBubble.swift */,
 			);
 			path = Messages;
+			sourceTree = "<group>";
+		};
+		C4B733D425A7FF6600DD5B46 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -204,6 +215,7 @@
 				C4B733D225A7F92D00DD5B46 /* ChatView.swift in Sources */,
 				C4B733C825A531AB00DD5B46 /* ConversationsView.swift in Sources */,
 				C4B7339F25A3CED100DD5B46 /* shitterApp.swift in Sources */,
+				C4B733D625A7FF6F00DD5B46 /* ChatBubble.swift in Sources */,
 				C4B733BB25A3F9EB00DD5B46 /* TweetCell.swift in Sources */,
 				C4B733C125A529D200DD5B46 /* SearchBar.swift in Sources */,
 				C4B733C425A52DFB00DD5B46 /* UserCell.swift in Sources */,
