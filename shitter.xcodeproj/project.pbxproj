@@ -18,6 +18,8 @@
 		C4B733C425A52DFB00DD5B46 /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B733C325A52DFB00DD5B46 /* UserCell.swift */; };
 		C4B733C825A531AB00DD5B46 /* ConversationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B733C725A531AB00DD5B46 /* ConversationsView.swift */; };
 		C4B733CC25A531C600DD5B46 /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B733CB25A531C600DD5B46 /* ConversationCell.swift */; };
+		C4B733CF25A7F7F300DD5B46 /* MessageInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B733CE25A7F7F300DD5B46 /* MessageInputView.swift */; };
+		C4B733D225A7F92D00DD5B46 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B733D125A7F92D00DD5B46 /* ChatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		C4B733C325A52DFB00DD5B46 /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		C4B733C725A531AB00DD5B46 /* ConversationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationsView.swift; sourceTree = "<group>"; };
 		C4B733CB25A531C600DD5B46 /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		C4B733CE25A7F7F300DD5B46 /* MessageInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageInputView.swift; sourceTree = "<group>"; };
+		C4B733D125A7F92D00DD5B46 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +122,8 @@
 			children = (
 				C4B733C725A531AB00DD5B46 /* ConversationsView.swift */,
 				C4B733CB25A531C600DD5B46 /* ConversationCell.swift */,
+				C4B733CE25A7F7F300DD5B46 /* MessageInputView.swift */,
+				C4B733D125A7F92D00DD5B46 /* ChatView.swift */,
 			);
 			path = Messages;
 			sourceTree = "<group>";
@@ -192,8 +198,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				C4B733BE25A5267600DD5B46 /* SearchView.swift in Sources */,
+				C4B733CF25A7F7F300DD5B46 /* MessageInputView.swift in Sources */,
 				C4B733A125A3CED100DD5B46 /* ContentView.swift in Sources */,
 				C4B733B525A3F4C200DD5B46 /* FeedView.swift in Sources */,
+				C4B733D225A7F92D00DD5B46 /* ChatView.swift in Sources */,
 				C4B733C825A531AB00DD5B46 /* ConversationsView.swift in Sources */,
 				C4B7339F25A3CED100DD5B46 /* shitterApp.swift in Sources */,
 				C4B733BB25A3F9EB00DD5B46 /* TweetCell.swift in Sources */,
