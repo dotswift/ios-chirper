@@ -20,11 +20,11 @@ struct UserCell: View {
             VStack(alignment: .leading, spacing: 4){
                 Text("Robert Lolli, Jr")
                     .font(.system(size: 14, weight: .semibold))
-                
+             
                 Text("Chef Bobby Lolli")
                     .font(.system(size: 14))
                 
-            }
+            }.foregroundColor(.black)
         }
     }
 }
