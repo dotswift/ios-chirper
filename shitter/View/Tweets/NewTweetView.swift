@@ -2,18 +2,22 @@ import SwiftUI
 
 struct NewTweetView: View {
     @Binding var isPresented: Bool
+    @State var captionText: String = ""
+    
     var body: some View {
         NavigationView{
             VStack {
-                HStack {
+                HStack(alignment: .top ){
                     Image("shilling")
                         .resizable()
                         .scaledToFill()
                         .clipped()
                         .frame(width: 64, height: 64)
                         .cornerRadius(32)
-                    Text("New Tweet..")
+                    
+                    TextArea("What's happening?????", text: $captionText)
                         .foregroundColor(.gray)
+                    
                     Spacer() // moves to left side of sreen
                 }
                 .padding()
