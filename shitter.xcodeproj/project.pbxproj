@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		C408F1E225A9262300E52A73 /* MessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408F1E125A9262300E52A73 /* MessageView.swift */; };
 		C408F1E525A9289100E52A73 /* NewMessageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408F1E425A9289100E52A73 /* NewMessageView.swift */; };
+		C408F1E925A92F6000E52A73 /* UserProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408F1E825A92F6000E52A73 /* UserProfileView.swift */; };
+		C408F1ED25A9303000E52A73 /* ProfileHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408F1EC25A9303000E52A73 /* ProfileHeaderView.swift */; };
+		C408F1F025A9303A00E52A73 /* ProfileActionButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408F1EF25A9303A00E52A73 /* ProfileActionButtonView.swift */; };
+		C408F1F325A9305300E52A73 /* FilterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408F1F225A9305300E52A73 /* FilterButtonView.swift */; };
 		C4B7339F25A3CED100DD5B46 /* shitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B7339E25A3CED100DD5B46 /* shitterApp.swift */; };
 		C4B733A125A3CED100DD5B46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B733A025A3CED100DD5B46 /* ContentView.swift */; };
 		C4B733A325A3CED600DD5B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B733A225A3CED600DD5B46 /* Assets.xcassets */; };
@@ -29,6 +33,10 @@
 /* Begin PBXFileReference section */
 		C408F1E125A9262300E52A73 /* MessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageView.swift; sourceTree = "<group>"; };
 		C408F1E425A9289100E52A73 /* NewMessageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewMessageView.swift; sourceTree = "<group>"; };
+		C408F1E825A92F6000E52A73 /* UserProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserProfileView.swift; sourceTree = "<group>"; };
+		C408F1EC25A9303000E52A73 /* ProfileHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileHeaderView.swift; sourceTree = "<group>"; };
+		C408F1EF25A9303A00E52A73 /* ProfileActionButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileActionButtonView.swift; sourceTree = "<group>"; };
+		C408F1F225A9305300E52A73 /* FilterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtonView.swift; sourceTree = "<group>"; };
 		C4B7339B25A3CED100DD5B46 /* shitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B7339E25A3CED100DD5B46 /* shitterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shitterApp.swift; sourceTree = "<group>"; };
 		C4B733A025A3CED100DD5B46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -107,6 +115,7 @@
 		C4B733B225A3F47B00DD5B46 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C4B733D425A7FF6600DD5B46 /* Profile */,
 				C4B733C625A5319F00DD5B46 /* Messages */,
 				C4B733A025A3CED100DD5B46 /* ContentView.swift */,
 				C4B733B425A3F4C200DD5B46 /* FeedView.swift */,
@@ -129,7 +138,6 @@
 		C4B733C625A5319F00DD5B46 /* Messages */ = {
 			isa = PBXGroup;
 			children = (
-				C4B733D425A7FF6600DD5B46 /* New Group */,
 				C4B733C725A531AB00DD5B46 /* ConversationsView.swift */,
 				C4B733CB25A531C600DD5B46 /* ConversationCell.swift */,
 				C4B733CE25A7F7F300DD5B46 /* MessageInputView.swift */,
@@ -141,11 +149,15 @@
 			path = Messages;
 			sourceTree = "<group>";
 		};
-		C4B733D425A7FF6600DD5B46 /* New Group */ = {
+		C4B733D425A7FF6600DD5B46 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				C408F1E825A92F6000E52A73 /* UserProfileView.swift */,
+				C408F1EC25A9303000E52A73 /* ProfileHeaderView.swift */,
+				C408F1EF25A9303A00E52A73 /* ProfileActionButtonView.swift */,
+				C408F1F225A9305300E52A73 /* FilterButtonView.swift */,
 			);
-			path = "New Group";
+			path = Profile;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -221,14 +233,18 @@
 				C4B733CF25A7F7F300DD5B46 /* MessageInputView.swift in Sources */,
 				C4B733A125A3CED100DD5B46 /* ContentView.swift in Sources */,
 				C4B733B525A3F4C200DD5B46 /* FeedView.swift in Sources */,
+				C408F1ED25A9303000E52A73 /* ProfileHeaderView.swift in Sources */,
 				C4B733D225A7F92D00DD5B46 /* ChatView.swift in Sources */,
 				C4B733C825A531AB00DD5B46 /* ConversationsView.swift in Sources */,
+				C408F1F325A9305300E52A73 /* FilterButtonView.swift in Sources */,
 				C4B7339F25A3CED100DD5B46 /* shitterApp.swift in Sources */,
 				C4B733D625A7FF6F00DD5B46 /* ChatBubble.swift in Sources */,
 				C4B733BB25A3F9EB00DD5B46 /* TweetCell.swift in Sources */,
 				C408F1E525A9289100E52A73 /* NewMessageView.swift in Sources */,
 				C4B733DA25A80B0600DD5B46 /* Message.swift in Sources */,
+				C408F1E925A92F6000E52A73 /* UserProfileView.swift in Sources */,
 				C4B733C125A529D200DD5B46 /* SearchBar.swift in Sources */,
+				C408F1F025A9303A00E52A73 /* ProfileActionButtonView.swift in Sources */,
 				C4B733C425A52DFB00DD5B46 /* UserCell.swift in Sources */,
 				C408F1E225A9262300E52A73 /* MessageView.swift in Sources */,
 				C4B733CC25A531C600DD5B46 /* ConversationCell.swift in Sources */,

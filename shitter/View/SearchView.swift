@@ -13,7 +13,14 @@ struct SearchView: View {
                 ForEach(0..<10){ _ in
                     // horizontal spacer "shorthand" for left hand alignment (space on right)
                     HStack { Spacer() }
-                    UserCell()
+                    
+                    NavigationLink(
+                        destination: UserProfileView(),
+                        label: {
+                            UserCell()
+                        })
+                    
+                    
                 }
             }.padding(.leading)
         }
