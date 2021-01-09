@@ -2,7 +2,7 @@ import SwiftUI
 
 struct ProfileHeaderView: View {
     var body: some View {
-        VStack{
+        VStack {
             Image("shilling")
                 .resizable()
                 .scaledToFill()
@@ -43,6 +43,8 @@ struct ProfileHeaderView: View {
                 }
             }
             .padding()
+            
+            ProfileActionButtonView(isCurrentUser: false)
             
             Spacer()
         }
