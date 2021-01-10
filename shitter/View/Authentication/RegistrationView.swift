@@ -1,10 +1,3 @@
-//
-//  RegistrationView.swift
-//  shitter
-//
-//  Created by derek quinn on 1/9/21.
-//
-
 import SwiftUI
 
 struct RegistrationView: View {
