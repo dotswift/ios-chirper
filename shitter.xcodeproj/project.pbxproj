@@ -15,6 +15,9 @@
 		C408F1F325A9305300E52A73 /* FilterButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408F1F225A9305300E52A73 /* FilterButtonView.swift */; };
 		C408F1F725AA6DDF00E52A73 /* NewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408F1F625AA6DDF00E52A73 /* NewTweetView.swift */; };
 		C408F1FD25AA757700E52A73 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408F1FC25AA757700E52A73 /* TextArea.swift */; };
+		C408F20225AAA86D00E52A73 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408F20125AAA86D00E52A73 /* LoginView.swift */; };
+		C408F20625AAA87600E52A73 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408F20525AAA87600E52A73 /* RegistrationView.swift */; };
+		C408F20925AAA9D000E52A73 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408F20825AAA9D000E52A73 /* CustomTextField.swift */; };
 		C4B7339F25A3CED100DD5B46 /* shitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B7339E25A3CED100DD5B46 /* shitterApp.swift */; };
 		C4B733A125A3CED100DD5B46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B733A025A3CED100DD5B46 /* ContentView.swift */; };
 		C4B733A325A3CED600DD5B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B733A225A3CED600DD5B46 /* Assets.xcassets */; };
@@ -41,6 +44,9 @@
 		C408F1F225A9305300E52A73 /* FilterButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterButtonView.swift; sourceTree = "<group>"; };
 		C408F1F625AA6DDF00E52A73 /* NewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetView.swift; sourceTree = "<group>"; };
 		C408F1FC25AA757700E52A73 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		C408F20125AAA86D00E52A73 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		C408F20525AAA87600E52A73 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		C408F20825AAA9D000E52A73 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C4B7339B25A3CED100DD5B46 /* shitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B7339E25A3CED100DD5B46 /* shitterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shitterApp.swift; sourceTree = "<group>"; };
 		C4B733A025A3CED100DD5B46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -91,8 +97,18 @@
 			isa = PBXGroup;
 			children = (
 				C408F1FC25AA757700E52A73 /* TextArea.swift */,
+				C408F20825AAA9D000E52A73 /* CustomTextField.swift */,
 			);
 			path = Views;
+			sourceTree = "<group>";
+		};
+		C408F20025AAA86300E52A73 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				C408F20125AAA86D00E52A73 /* LoginView.swift */,
+				C408F20525AAA87600E52A73 /* RegistrationView.swift */,
+			);
+			path = Authentication;
 			sourceTree = "<group>";
 		};
 		C4B7339225A3CED100DD5B46 = {
@@ -144,6 +160,7 @@
 		C4B733B225A3F47B00DD5B46 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				C408F20025AAA86300E52A73 /* Authentication */,
 				C408F1F525AA6DCA00E52A73 /* Tweets */,
 				C4B733D425A7FF6600DD5B46 /* Profile */,
 				C4B733C625A5319F00DD5B46 /* Messages */,
@@ -261,12 +278,14 @@
 			files = (
 				C4B733BE25A5267600DD5B46 /* SearchView.swift in Sources */,
 				C408F1FD25AA757700E52A73 /* TextArea.swift in Sources */,
+				C408F20625AAA87600E52A73 /* RegistrationView.swift in Sources */,
 				C4B733CF25A7F7F300DD5B46 /* MessageInputView.swift in Sources */,
 				C4B733A125A3CED100DD5B46 /* ContentView.swift in Sources */,
 				C4B733B525A3F4C200DD5B46 /* FeedView.swift in Sources */,
 				C408F1ED25A9303000E52A73 /* ProfileHeaderView.swift in Sources */,
 				C4B733D225A7F92D00DD5B46 /* ChatView.swift in Sources */,
 				C4B733C825A531AB00DD5B46 /* ConversationsView.swift in Sources */,
+				C408F20225AAA86D00E52A73 /* LoginView.swift in Sources */,
 				C408F1F725AA6DDF00E52A73 /* NewTweetView.swift in Sources */,
 				C408F1F325A9305300E52A73 /* FilterButtonView.swift in Sources */,
 				C4B7339F25A3CED100DD5B46 /* shitterApp.swift in Sources */,
@@ -277,6 +296,7 @@
 				C408F1E925A92F6000E52A73 /* UserProfileView.swift in Sources */,
 				C4B733C125A529D200DD5B46 /* SearchBar.swift in Sources */,
 				C408F1F025A9303A00E52A73 /* ProfileActionButtonView.swift in Sources */,
+				C408F20925AAA9D000E52A73 /* CustomTextField.swift in Sources */,
 				C4B733C425A52DFB00DD5B46 /* UserCell.swift in Sources */,
 				C408F1E225A9262300E52A73 /* MessageView.swift in Sources */,
 				C4B733CC25A531C600DD5B46 /* ConversationCell.swift in Sources */,
