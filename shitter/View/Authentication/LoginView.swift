@@ -5,7 +5,9 @@ struct LoginView: View {
     @State var password = ""
     
     var body: some View {
+        NavigationView{
         ZStack {
+          
             VStack {
                 Image("shilling")
                     .resizable()
@@ -22,7 +24,7 @@ struct LoginView: View {
                         .padding() // this adds padding around the edges of the box
                         .foregroundColor(.white)
                     
-                    CustomTextField(text: $email, placeholder: Text("password"), imageName: "lock")
+                    CustomSecureField(text: $password, placeholder: Text("password"), imageName: "lock")
                         .padding() // this padding spreads text field dimensions
                         .background(Color(.init(white: 1, alpha: 0.15)))
                         .cornerRadius(200)
@@ -47,7 +49,7 @@ struct LoginView: View {
                 }
                 
                 Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("Get Help w/ Failing Restaurant")
+                    Text("Log In")
                         .font(.headline)
                         .foregroundColor(.yellow)
                         .frame(width: 360, height: 50)
@@ -58,16 +60,21 @@ struct LoginView: View {
                 
                 Spacer()
                 
-                HStack {
-                    Text("Are you broke?")
+                NavigationLink(
+                    destination: RegistrationView().navigationBarBackButtonHidden(true),
+                    label: {
+                        HStack {
+                            Text("Need to save your restaurant?")
+                                
+                                .font(.system(size: 14, weight: .semibold))
+                            
+                            Text("Sign up here!")
+                                .font(.system(size: 14, weight: .semibold))
+                        }
+                        .foregroundColor(.white)
+                        .padding(.bottom, 40)
                         
-                        .font(.system(size: 14, weight: .semibold))
-                    
-                    Text("Get Help Here.")
-                        .font(.system(size: 14, weight: .semibold))
-                }
-                .foregroundColor(.white)
-                .padding(.bottom, 40)
+                    })
             }
             .background(Color(.brown))
         }
@@ -75,7 +82,7 @@ struct LoginView: View {
         .ignoresSafeArea()
     }
 }
-
+}
 struct LoginView_Previews: PreviewProvider {
     static var previews: some View {
         LoginView()
