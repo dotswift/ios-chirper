@@ -19,6 +19,7 @@
 		C408F20625AAA87600E52A73 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408F20525AAA87600E52A73 /* RegistrationView.swift */; };
 		C408F20925AAA9D000E52A73 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408F20825AAA9D000E52A73 /* CustomTextField.swift */; };
 		C408F20C25AAB21A00E52A73 /* CustomSecureField.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408F20B25AAB21A00E52A73 /* CustomSecureField.swift */; };
+		C408F20F25ABA8BF00E52A73 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = C408F20E25ABA8BF00E52A73 /* ImagePicker.swift */; };
 		C4B7339F25A3CED100DD5B46 /* shitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B7339E25A3CED100DD5B46 /* shitterApp.swift */; };
 		C4B733A125A3CED100DD5B46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B733A025A3CED100DD5B46 /* ContentView.swift */; };
 		C4B733A325A3CED600DD5B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B733A225A3CED600DD5B46 /* Assets.xcassets */; };
@@ -49,6 +50,7 @@
 		C408F20525AAA87600E52A73 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
 		C408F20825AAA9D000E52A73 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		C408F20B25AAB21A00E52A73 /* CustomSecureField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSecureField.swift; sourceTree = "<group>"; };
+		C408F20E25ABA8BF00E52A73 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		C4B7339B25A3CED100DD5B46 /* shitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B7339E25A3CED100DD5B46 /* shitterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shitterApp.swift; sourceTree = "<group>"; };
 		C4B733A025A3CED100DD5B46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -101,6 +103,7 @@
 				C408F1FC25AA757700E52A73 /* TextArea.swift */,
 				C408F20825AAA9D000E52A73 /* CustomTextField.swift */,
 				C408F20B25AAB21A00E52A73 /* CustomSecureField.swift */,
+				C408F20E25ABA8BF00E52A73 /* ImagePicker.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -292,6 +295,7 @@
 				C408F1F725AA6DDF00E52A73 /* NewTweetView.swift in Sources */,
 				C408F1F325A9305300E52A73 /* FilterButtonView.swift in Sources */,
 				C4B7339F25A3CED100DD5B46 /* shitterApp.swift in Sources */,
+				C408F20F25ABA8BF00E52A73 /* ImagePicker.swift in Sources */,
 				C4B733D625A7FF6F00DD5B46 /* ChatBubble.swift in Sources */,
 				C4B733BB25A3F9EB00DD5B46 /* TweetCell.swift in Sources */,
 				C408F1E525A9289100E52A73 /* NewMessageView.swift in Sources */,

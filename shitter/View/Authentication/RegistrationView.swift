@@ -5,22 +5,32 @@ struct RegistrationView: View {
     @State var password = ""
     @State var fullName = ""
     @State var userName = ""
+    @State var showImagePicker = false
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     // variable that keeps track of the presentation mode that app is currently utilzing
     
     var body: some View {
-        NavigationView {
+
             ZStack {
                 VStack {
-                    
-                    Image("plus_photo")
-                        .resizable()
-                        .renderingMode(.template)
-                        .scaledToFill()
-                        .frame(width: 140, height: 140)
-                        .padding(.top, 50)
-                        .padding(.bottom, 16)
-                        .foregroundColor(.yellow)
+                    Button(action: {
+                        showImagePicker.toggle()
+                     
+                        
+                    }, label: {
+                        Image("plus_photo")
+                            .resizable()
+                            .renderingMode(.template)
+                            .scaledToFill()
+                            .frame(width: 140, height: 140)
+                            .padding(.top, 50)
+                            .padding(.bottom, 16)
+                            .foregroundColor(.yellow)
+                    }).sheet(isPresented: $showImagePicker, content: {
+                        // Using UIKit for image picker functionality
+                        ImagePicker()
+                        
+                    })
                     
                     VStack(spacing: 20){
                         CustomTextField(text: $email, placeholder: Text("E-Mail"), imageName: "envelope")
@@ -41,12 +51,11 @@ struct RegistrationView: View {
                             .cornerRadius(30)
                             .foregroundColor(.white)
                         
-                        CustomTextField(text: $password, placeholder: Text("password"), imageName: "tortoise")
+                        CustomSecureField(text: $password, placeholder: Text("password"), imageName: "tortoise")
                             .padding() // this padding spreads text field dimensions
                             .background(Color(.init(white: 1, alpha: 0.15)))
                             .cornerRadius(30)
                             .foregroundColor(.white)
-                        
                     }
                     .padding(.horizontal, 32)
                     
@@ -81,7 +90,6 @@ struct RegistrationView: View {
             .ignoresSafeArea()
         }
     }
-}
 
 struct RegistrationView_Previews: PreviewProvider {
     static var previews: some View {
