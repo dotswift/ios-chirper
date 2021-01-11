@@ -9,6 +9,7 @@ struct RegistrationView: View {
     @State var selectedUIImage: UIImage? // UIKit
     @State var image: Image? // Swift UI Image
     
+    @ObservedObject var viewModel = AuthViewModel()
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     // variable that keeps track of the presentation mode that app is currently utilzing
     
@@ -77,7 +78,12 @@ struct RegistrationView: View {
                 }
                 .padding(.horizontal, 32)
                 
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
+                Button(action: {
+                    guard let image = selectedUIImage  else { return }
+                    // why don't we use $ in front of email, password, etc
+                    viewModel.registerUser(email: email, password: password, userName: userName, fullName: fullName, userImage: image)
+                    
+                }, label: {
                     Text("Register your Restaurant")
                         .font(.headline)
                         .foregroundColor(.yellow)
