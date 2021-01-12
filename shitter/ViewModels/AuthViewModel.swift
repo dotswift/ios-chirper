@@ -3,9 +3,29 @@ import SwiftUI
 import Firebase
 
 class AuthViewModel: ObservableObject {
+    @Published var userSession: FirebaseAuth.User? // keeps track of if user is logged in
+    @Published var isAuthenticating = false // is the process of signup / login ongoing?
+    @Published var error: Error? // if we get an error when user is trying to login, it will be stored here for use in the UI
+    @Published var user: User? // keeps track of user, so we can store user data
     
-    func login() {
-        
+    init() {
+        userSession = Auth.auth().currentUser
+    }
+    
+    // why is withEmail here
+    func login(withEmail email: String, password: String) {
+        Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+            if let error = error  {
+                print("[Error] login() failed to login, error = \(error.localizedDescription)")
+                return
+            }
+            print("[Success] login()")
+        }
+    }
+    
+    func logOut(){
+        userSession = nil
+        try? Auth.auth().signOut()
     }
     
     func registerUser(email: String, password: String, userName: String,  fullName: String, userImage: UIImage){
@@ -26,7 +46,7 @@ class AuthViewModel: ObservableObject {
                 // use the URL to upload the data to firebase
                 Auth.auth().createUser(withEmail: email, password: password) { result, error in
                     
-                    if  let error = error  {
+                    if error != nil  {
                         return
                     }
                     

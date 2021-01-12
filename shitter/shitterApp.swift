@@ -11,7 +11,7 @@ struct shitterApp: App {
     
     var body: some Scene {
         WindowGroup {
-            LoginView()// login view shows up first
+            ContentView().environmentObject(AuthViewModel())
         }
     }
 }
