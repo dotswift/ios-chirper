@@ -9,7 +9,7 @@ struct RegistrationView: View {
     @State var selectedUIImage: UIImage? // UIKit
     @State var image: Image? // Swift UI Image
     
-    @ObservedObject var viewModel = AuthViewModel()
+    @EnvironmentObject var viewModel: AuthViewModel
     @Environment(\.presentationMode) var mode: Binding<PresentationMode>
     // variable that keeps track of the presentation mode that app is currently utilzing
     
