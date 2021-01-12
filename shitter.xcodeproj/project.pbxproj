@@ -26,6 +26,7 @@
 		C4776CE525ABF13E007AD28B /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = C4776CE425ABF13E007AD28B /* FirebaseAuth */; };
 		C4776CE725ABF13E007AD28B /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = C4776CE625ABF13E007AD28B /* FirebaseFirestore */; };
 		C4776CEA25ABF53E007AD28B /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4776CE925ABF53E007AD28B /* AuthViewModel.swift */; };
+		C4776CED25AD5255007AD28B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4776CEC25AD5255007AD28B /* User.swift */; };
 		C4B7339F25A3CED100DD5B46 /* shitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B7339E25A3CED100DD5B46 /* shitterApp.swift */; };
 		C4B733A125A3CED100DD5B46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B733A025A3CED100DD5B46 /* ContentView.swift */; };
 		C4B733A325A3CED600DD5B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B733A225A3CED600DD5B46 /* Assets.xcassets */; };
@@ -59,6 +60,7 @@
 		C408F20E25ABA8BF00E52A73 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		C4776CDC25ABEF90007AD28B /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		C4776CE925ABF53E007AD28B /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		C4776CEC25AD5255007AD28B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		C4B7339B25A3CED100DD5B46 /* shitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B7339E25A3CED100DD5B46 /* shitterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shitterApp.swift; sourceTree = "<group>"; };
 		C4B733A025A3CED100DD5B46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 			isa = PBXGroup;
 			children = (
 				C4B733D925A80B0600DD5B46 /* Message.swift */,
+				C4776CEC25AD5255007AD28B /* User.swift */,
 			);
 			path = "Model ";
 			sourceTree = "<group>";
@@ -326,6 +329,7 @@
 				C4776CEA25ABF53E007AD28B /* AuthViewModel.swift in Sources */,
 				C4B733DA25A80B0600DD5B46 /* Message.swift in Sources */,
 				C408F1E925A92F6000E52A73 /* UserProfileView.swift in Sources */,
+				C4776CED25AD5255007AD28B /* User.swift in Sources */,
 				C4B733C125A529D200DD5B46 /* SearchBar.swift in Sources */,
 				C408F1F025A9303A00E52A73 /* ProfileActionButtonView.swift in Sources */,
 				C408F20925AAA9D000E52A73 /* CustomTextField.swift in Sources */,

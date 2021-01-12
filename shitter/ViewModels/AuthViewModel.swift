@@ -10,6 +10,7 @@ class AuthViewModel: ObservableObject {
     
     init() {
         userSession = Auth.auth().currentUser
+        fetchUser()
     }
     
     // why is withEmail here
@@ -28,6 +29,15 @@ class AuthViewModel: ObservableObject {
     func logOut(){
         userSession = nil
         try? Auth.auth().signOut()
+    }
+    
+    func fetchUser(){
+        guard let uid = userSession?.uid else { return }
+        Firestore.firestore().collection("users").document(uid).getDocument { snapshot, _  in
+            guard let data = snapshot?.data() else { return }
+            let user = User(dictionary: data)
+            print("[Success] fetchUser() user =", user.userName)
+        }
     }
     
     func registerUser(email: String, password: String, userName: String,  fullName: String, userImage: UIImage){
