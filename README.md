@@ -5,4 +5,5 @@ Course: [Twitter Swift UI Clone on Udemy](https://www.udemy.com/course/twitter-s
 -- Course created by Stephan Dowless
 
 # Dependencies
-- Firebase
+- Firebase (Storage & Firestore)
+- Kingfisher 6
