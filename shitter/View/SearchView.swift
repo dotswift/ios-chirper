@@ -20,8 +20,6 @@ struct SearchView: View {
                         label: {
                             UserCell(user: user)
                         })
-                    
-                    
                 }
             }.padding(.leading)
         }
