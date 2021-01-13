@@ -2,7 +2,8 @@ import SwiftUI
 
 struct SearchView: View {
     @State var searchText = ""
-    
+    @ObservedObject var viewModel = SearchViewModel()
+    // viewmodel is observable (SearchViewModel) and the object being observed is the viewModel, hence @ObservedObject
     var body: some View {
         
         ScrollView {
@@ -10,17 +11,15 @@ struct SearchView: View {
                 .padding()
             
             VStack(alignment: .leading) {
-                ForEach(0..<10){ _ in
+                ForEach(viewModel.users){ user in
                     // horizontal spacer "shorthand" for left hand alignment (space on right)
                     HStack { Spacer() }
                     
                     NavigationLink(
-                        destination: UserProfileView(),
+                        destination: UserProfileView(user: user),
                         label: {
-                            UserCell()
+                            UserCell(user: user)
                         })
-                    
-                    
                 }
             }.padding(.leading)
         }
