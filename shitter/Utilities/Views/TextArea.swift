@@ -25,4 +25,3 @@ struct TextArea: View {
         }.font(.body)
     }
 }
-
