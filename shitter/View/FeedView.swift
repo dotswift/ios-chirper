@@ -15,11 +15,7 @@ struct FeedView: View {
                 }.padding()
             }
             
-            Button(action: {
-                //isShowingNewTweetView.toggle()
-                viewModel.logOut()
-                
-            }, label: {
+            Button(action: { isShowingNewTweetView.toggle() }, label: {
                 Image(systemName: "plus")
                     .resizable()
                     .frame(width: 32, height: 32)

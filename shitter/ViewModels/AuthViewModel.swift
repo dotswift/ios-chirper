@@ -6,7 +6,7 @@ class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User? // keeps track of if user is logged in
     @Published var isAuthenticating = false // is the process of signup / login ongoing?
     @Published var error: Error? // if we get an error when user is trying to login, it will be stored here for use in the UI
-    //@Published var user: User? // keeps track of user, so we can store user data
+    @Published var user: User? // keeps track of user, so we can store user data
     
     init() {
         userSession = Auth.auth().currentUser
@@ -35,8 +35,7 @@ class AuthViewModel: ObservableObject {
         guard let uid = userSession?.uid else { return }
         Firestore.firestore().collection("users").document(uid).getDocument { snapshot, _  in
             guard let data = snapshot?.data() else { return }
-            let user = User(dictionary: data)
-            print("[Success] fetchUser() user =", user.userName)
+            self.user = User(dictionary: data)
         }
     }
     
