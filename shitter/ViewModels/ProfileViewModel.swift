@@ -46,5 +46,4 @@ class ProfileViewModel: ObservableObject{
             self.isFollowed = isFollowed
         }
     }
-    
 }
