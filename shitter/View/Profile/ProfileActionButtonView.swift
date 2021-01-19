@@ -1,11 +1,12 @@
 import SwiftUI
 
 struct ProfileActionButtonView: View {
-    let isCurrentUser: Bool
-    
+    let viewModel: ProfileViewModel
+    @Binding var isFollowed: Bool
+    // needs to be a binding variable because our UI is going to be adjusted / updated based on the state of this variable (it will be passed in from parent)
     var body: some View {
         
-        if isCurrentUser{
+        if viewModel.user.isCurrentUser{
             Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
                 Text("Edit Profile")
                     .frame(width: 360, height: 40)
@@ -16,8 +17,10 @@ struct ProfileActionButtonView: View {
             
         } else {
             HStack{
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/, label: {
-                    Text("Follow")
+                Button(action: {
+                    isFollowed ? viewModel.unfollow() : viewModel.follow()
+                }, label: {
+                    Text(isFollowed ? "Following" : "Follow")
                         .frame(width: 180, height: 40)
                         .background(Color(.yellow))
                         .foregroundColor(.black)
@@ -34,11 +37,5 @@ struct ProfileActionButtonView: View {
                 
             }
         }
-    }
-}
-
-struct ProfileActionButtonView_Previews: PreviewProvider {
-    static var previews: some View {
-        ProfileActionButtonView(isCurrentUser: false)
     }
 }
