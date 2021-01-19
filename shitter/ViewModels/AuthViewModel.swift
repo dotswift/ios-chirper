@@ -8,6 +8,8 @@ class AuthViewModel: ObservableObject {
     @Published var error: Error? // if we get an error when user is trying to login, it will be stored here for use in the UI
     @Published var user: User? // keeps track of user, so we can store user data
     
+    static let shared = AuthViewModel() // through this shared instance will be able to access user wherever we want in the app
+    
     init() {
         userSession = Auth.auth().currentUser
         fetchUser()
@@ -22,7 +24,7 @@ class AuthViewModel: ObservableObject {
             }
             
             self.userSession = result?.user
-            print("[Success] login()")
+            self.fetchUser()
         }
     }
     
@@ -71,7 +73,7 @@ class AuthViewModel: ObservableObject {
                     
                     Firestore.firestore().collection("users").document(user.uid).setData(data) { _ in
                         self.userSession = user
-                        print("[Success] registerUser()")
+                        self.fetchUser()
                     }
                     
                 }
