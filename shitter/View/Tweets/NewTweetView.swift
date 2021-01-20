@@ -18,7 +18,7 @@ struct NewTweetView: View {
                     if let user = AuthViewModel.shared.user {
                         KFImage(URL(string: user.profileImageUrl))
                             .resizable()
-                            .scaledToFill()
+                            .scaledToFit()
                             .clipped()
                             .frame(width: 64, height: 64)
                             .cornerRadius(32)

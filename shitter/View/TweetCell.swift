@@ -1,32 +1,36 @@
 import SwiftUI
+import Kingfisher
 
 struct TweetCell: View {
+    let tweet: Tweet
+    
     var body: some View {
         VStack(alignment: .leading) {
             
             HStack(alignment: .top, spacing: 12){ // spacing creates room between picture and username/text
                 
-                Image("shilling")
-                    .resizable() // default image in Swift UI gets actual image size. This fixes that.
-                    .scaledToFit()
+                KFImage(URL(string: tweet.profileImageUrl))
+                    .resizable()
+                    .scaledToFill()
                     .clipped()
                     .frame(width: 56, height: 56)
-                    .cornerRadius(56/2)
+                    .cornerRadius(28)
                     .padding(.leading)
                 
                 VStack(alignment: .leading, spacing: 4) { // leading = left
                     HStack {
-                        Text("Brenden")
+                        Text(tweet.fullName)
                             .font(.system(size: 14, weight : .semibold))
-                        Text("@letsgohoover07 •")
+                        Text(tweet.userName)
                             .foregroundColor(.gray)
                             .font(.system(size: 12, weight : .bold))
-                        Text("Yesterday")
+                        Text("2w")
                             .foregroundColor(.gray)
                             .font(.system(size: 12, weight : .bold))
                     }
                     
-                    Text("Anyone want to play PS2?")
+                    Text(tweet.caption)
+                    
                 }
             }
             .padding(.bottom)
@@ -68,11 +72,5 @@ struct TweetCell: View {
             Divider() // divider line under cell automatically rendered
         }
         .padding(.leading, -16)
-    }
-}
-
-struct TweetCell_Previews: PreviewProvider {
-    static var previews: some View {
-        TweetCell()
     }
 }

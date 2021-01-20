@@ -16,8 +16,8 @@ struct UserProfileView: View {
                     .padding()
                 
                 ForEach(0..<9) { tweet in
-                    TweetCell()
-                        .padding()
+//                    TweetCell()
+//                        .padding()
                 }
             }
             .navigationTitle("Shilling")
