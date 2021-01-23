@@ -10,7 +10,13 @@ struct FeedView: View {
                 // TODO: LazyVStack only load cells on an as-needed basis "lazy"
                 VStack{
                     ForEach(viewModel.tweets){ tweet in
-                        TweetCell(tweet: tweet)
+                        NavigationLink(
+                            destination: TweetDetailView(tweet: tweet),
+                            label: {
+                                TweetCell(tweet: tweet)
+                                
+                            })
+                        
                     }
                 }.padding()
             }
