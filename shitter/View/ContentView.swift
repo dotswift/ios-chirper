@@ -1,5 +1,5 @@
 import SwiftUI
-
+import Kingfisher
 // Every time you create a SwiftUI file, you get a preview struct associated with it so you can see changes happening in real time.
 struct ContentView: View {
     @EnvironmentObject var viewModel: AuthViewModel
@@ -30,6 +30,19 @@ struct ContentView: View {
                             }
                     }
                     .navigationBarTitle("Shitter")
+                    .navigationBarItems(leading: Button(action: {
+                        viewModel.logOut()
+                    }, label: {
+                        if let user = viewModel.user {
+                            KFImage(URL(string: user.profileImageUrl))
+                                .resizable()
+                                .scaledToFill()
+                                .clipped()
+                                .frame(width: 32, height: 32)
+                                .cornerRadius(16)
+                        }
+                        
+                    }))
                     .navigationBarTitleDisplayMode(.inline)
                 }
                 
