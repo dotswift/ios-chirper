@@ -36,6 +36,7 @@
 		C4776CF425AE6E94007AD28B /* SearchViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4776CF325AE6E93007AD28B /* SearchViewModel.swift */; };
 		C4776CF725AE705D007AD28B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4776CF625AE705D007AD28B /* Constants.swift */; };
 		C4776CFA25AFF72E007AD28B /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4776CF925AFF72E007AD28B /* ProfileViewModel.swift */; };
+		C4A7D38625C60B8400B1438E /* TweetActionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7D38525C60B8400B1438E /* TweetActionViewModel.swift */; };
 		C4B7339F25A3CED100DD5B46 /* shitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B7339E25A3CED100DD5B46 /* shitterApp.swift */; };
 		C4B733A125A3CED100DD5B46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B733A025A3CED100DD5B46 /* ContentView.swift */; };
 		C4B733A325A3CED600DD5B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B733A225A3CED600DD5B46 /* Assets.xcassets */; };
@@ -78,6 +79,7 @@
 		C4776CF325AE6E93007AD28B /* SearchViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewModel.swift; sourceTree = "<group>"; };
 		C4776CF625AE705D007AD28B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C4776CF925AFF72E007AD28B /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		C4A7D38525C60B8400B1438E /* TweetActionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetActionViewModel.swift; sourceTree = "<group>"; };
 		C4B7339B25A3CED100DD5B46 /* shitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B7339E25A3CED100DD5B46 /* shitterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shitterApp.swift; sourceTree = "<group>"; };
 		C4B733A025A3CED100DD5B46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -200,6 +202,7 @@
 				C4776CF925AFF72E007AD28B /* ProfileViewModel.swift */,
 				C46B335525B69AED00727342 /* UploadTweetViewModel.swift */,
 				C46B335925B7D38C00727342 /* FeedViewModel.swift */,
+				C4A7D38525C60B8400B1438E /* TweetActionViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -347,6 +350,7 @@
 				C4776CF725AE705D007AD28B /* Constants.swift in Sources */,
 				C4B733B525A3F4C200DD5B46 /* FeedView.swift in Sources */,
 				C408F1ED25A9303000E52A73 /* ProfileHeaderView.swift in Sources */,
+				C4A7D38625C60B8400B1438E /* TweetActionViewModel.swift in Sources */,
 				C43BCA9725BC0F6E00638B2D /* TweetActionsView.swift in Sources */,
 				C4B733D225A7F92D00DD5B46 /* ChatView.swift in Sources */,
 				C4B733C825A531AB00DD5B46 /* ConversationsView.swift in Sources */,

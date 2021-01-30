@@ -38,7 +38,7 @@ struct TweetCell: View {
             .padding(.bottom)
             .padding(.trailing)
             
-            TweetActionsView()
+            TweetActionsView(tweet: tweet)
             Divider() // divider line under cell automatically rendered
         }
         .padding(.leading, -16)
