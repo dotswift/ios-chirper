@@ -1,21 +1,17 @@
-import Foundation
 import SwiftUI
 import Firebase
 
 class AuthViewModel: ObservableObject {
     @Published var userSession: FirebaseAuth.User? // keeps track of if user is logged in
-    @Published var isAuthenticating = false // is the process of signup / login ongoing?
-    @Published var error: Error? // if we get an error when user is trying to login, it will be stored here for use in the UI
     @Published var user: User? // keeps track of user, so we can store user data
     
-    static let shared = AuthViewModel() // through this shared instance will be able to access user wherever we want in the app
+    static let shared = AuthViewModel() // shared instance will be able to access user wherever we want in the app
     
     init() {
         userSession = Auth.auth().currentUser
         fetchUser()
     }
     
-    // why is withEmail here
     func login(withEmail email: String, password: String) {
         Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
             if let error = error  {
@@ -37,7 +33,10 @@ class AuthViewModel: ObservableObject {
     func fetchUser(){
         guard let uid = userSession?.uid else { return }
         Firestore.firestore().collection("users").document(uid).getDocument { snapshot, _  in
-            guard let data = snapshot?.data() else { return }
+            guard let data = snapshot?.data() else {
+                print("[Error] fetchUser() failed, snapshot data failed to load")
+                return
+            }
             self.user = User(dictionary: data)
         }
     }
@@ -55,12 +54,12 @@ class AuthViewModel: ObservableObject {
             }
             
             storageRef.downloadURL { url, _ in
-                guard let profileImageUrl = url?.absoluteString else { return } // provides URL for the image
+                guard let profileImageUrl = url?.absoluteString else { return }
                 
-                // use the URL to upload the data to firebase
                 Auth.auth().createUser(withEmail: email, password: password) { result, error in
                     
                     if error != nil  {
+                        print("[Error] registerUser() failed to create user = \(error?.localizedDescription)")
                         return
                     }
                     
