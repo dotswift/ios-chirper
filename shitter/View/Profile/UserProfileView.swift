@@ -15,9 +15,9 @@ struct UserProfileView: View {
                 ProfileHeaderView(viewModel: viewModel, isFollowed: $viewModel.isFollowed)
                     .padding()
                 
-                ForEach(0..<9) { tweet in
-//                    TweetCell()
-//                        .padding()
+                ForEach(viewModel.likedTweets) { tweet in
+                    TweetCell(tweet: tweet)
+                        .padding()
                 }
             }
             .navigationTitle("Shilling")

@@ -19,7 +19,7 @@ struct FilterButtonView: View {
     
     private let underlineWidth = UIScreen.main.bounds.width / CGFloat(TweetFilterOptions.allCases.count)
     
-    private var padding: CGFloat {
+     private var padding: CGFloat {
         let rawValue = CGFloat(selectedOption.rawValue)
         let count = CGFloat(TweetFilterOptions.allCases.count)
         return(UIScreen.main.bounds.width / count * rawValue) + 16
