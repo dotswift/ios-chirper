@@ -3,6 +3,7 @@ import SwiftUI
 struct UserProfileView: View {
     let user: User
     @ObservedObject var viewModel: ProfileViewModel // whenever the publised property gets updated, the UI changes
+    @State var selectedFilter: TweetFilterOptions = .tweets
     
     init(user: User) {
         self.user = user
@@ -12,15 +13,18 @@ struct UserProfileView: View {
     var body: some View {
         ScrollView{
             VStack{
-                ProfileHeaderView(viewModel: viewModel, isFollowed: $viewModel.isFollowed)
+                ProfileHeaderView(isFollowed: $viewModel.isFollowed, viewModel: viewModel)
                     .padding()
                 
-                ForEach(viewModel.likedTweets) { tweet in
+                FilterButtonView(selectedOption: $selectedFilter)
+                    .padding()
+                
+                ForEach(viewModel.tweets(forFilter: selectedFilter)) { tweet in
                     TweetCell(tweet: tweet)
                         .padding()
                 }
             }
-            .navigationTitle("Shilling")
+            .navigationTitle(user.userName)
         }
     }
 }

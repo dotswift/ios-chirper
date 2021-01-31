@@ -37,6 +37,7 @@
 		C4776CF725AE705D007AD28B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4776CF625AE705D007AD28B /* Constants.swift */; };
 		C4776CFA25AFF72E007AD28B /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4776CF925AFF72E007AD28B /* ProfileViewModel.swift */; };
 		C4A7D38625C60B8400B1438E /* TweetActionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7D38525C60B8400B1438E /* TweetActionViewModel.swift */; };
+		C4A7D38A25C657F600B1438E /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7D38925C657F600B1438E /* LazyView.swift */; };
 		C4B7339F25A3CED100DD5B46 /* shitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B7339E25A3CED100DD5B46 /* shitterApp.swift */; };
 		C4B733A125A3CED100DD5B46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B733A025A3CED100DD5B46 /* ContentView.swift */; };
 		C4B733A325A3CED600DD5B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B733A225A3CED600DD5B46 /* Assets.xcassets */; };
@@ -80,6 +81,7 @@
 		C4776CF625AE705D007AD28B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		C4776CF925AFF72E007AD28B /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		C4A7D38525C60B8400B1438E /* TweetActionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetActionViewModel.swift; sourceTree = "<group>"; };
+		C4A7D38925C657F600B1438E /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		C4B7339B25A3CED100DD5B46 /* shitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B7339E25A3CED100DD5B46 /* shitterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shitterApp.swift; sourceTree = "<group>"; };
 		C4B733A025A3CED100DD5B46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -141,6 +143,7 @@
 				C408F20825AAA9D000E52A73 /* CustomTextField.swift */,
 				C408F20B25AAB21A00E52A73 /* CustomSecureField.swift */,
 				C408F20E25ABA8BF00E52A73 /* ImagePicker.swift */,
+				C4A7D38925C657F600B1438E /* LazyView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -340,6 +343,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4A7D38A25C657F600B1438E /* LazyView.swift in Sources */,
 				C4B733BE25A5267600DD5B46 /* SearchView.swift in Sources */,
 				C408F1FD25AA757700E52A73 /* TextArea.swift in Sources */,
 				C408F20625AAA87600E52A73 /* RegistrationView.swift in Sources */,

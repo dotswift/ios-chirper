@@ -2,14 +2,14 @@ import SwiftUI
 
 enum TweetFilterOptions: Int, CaseIterable { // CaseIterable means we can iterate through with For Loop
     case tweets
-    case replies
     case likes
+//  case replies
     
     var title: String {
         switch self {
         case .tweets: return "Tweets"
-        case .replies: return "Tweets & Replies"
         case .likes: return "Likes"
+//      case .replies: return "Tweets & Replies"
         }
     }
 }
