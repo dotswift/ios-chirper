@@ -82,7 +82,7 @@
 		C4776CF925AFF72E007AD28B /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		C4A7D38525C60B8400B1438E /* TweetActionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetActionViewModel.swift; sourceTree = "<group>"; };
 		C4A7D38925C657F600B1438E /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
-		C4B7339B25A3CED100DD5B46 /* shitter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = shitter.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4B7339B25A3CED100DD5B46 /* chirper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chirper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4B7339E25A3CED100DD5B46 /* shitterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shitterApp.swift; sourceTree = "<group>"; };
 		C4B733A025A3CED100DD5B46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C4B733A225A3CED600DD5B46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -168,7 +168,7 @@
 		C4B7339C25A3CED100DD5B46 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C4B7339B25A3CED100DD5B46 /* shitter.app */,
+				C4B7339B25A3CED100DD5B46 /* chirper.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -265,9 +265,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		C4B7339A25A3CED100DD5B46 /* shitter */ = {
+		C4B7339A25A3CED100DD5B46 /* chirper */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = C4B733AA25A3CED600DD5B46 /* Build configuration list for PBXNativeTarget "shitter" */;
+			buildConfigurationList = C4B733AA25A3CED600DD5B46 /* Build configuration list for PBXNativeTarget "chirper" */;
 			buildPhases = (
 				C4B7339725A3CED100DD5B46 /* Sources */,
 				C4B7339825A3CED100DD5B46 /* Frameworks */,
@@ -277,7 +277,7 @@
 			);
 			dependencies = (
 			);
-			name = shitter;
+			name = chirper;
 			packageProductDependencies = (
 				C4776CE025ABF13E007AD28B /* FirebaseFunctions */,
 				C4776CE225ABF13E007AD28B /* FirebaseStorage */,
@@ -286,7 +286,7 @@
 				C4776CF025AE6DF1007AD28B /* Kingfisher */,
 			);
 			productName = shitter;
-			productReference = C4B7339B25A3CED100DD5B46 /* shitter.app */;
+			productReference = C4B7339B25A3CED100DD5B46 /* chirper.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -303,7 +303,7 @@
 					};
 				};
 			};
-			buildConfigurationList = C4B7339625A3CED100DD5B46 /* Build configuration list for PBXProject "shitter" */;
+			buildConfigurationList = C4B7339625A3CED100DD5B46 /* Build configuration list for PBXProject "chirper" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -320,7 +320,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				C4B7339A25A3CED100DD5B46 /* shitter */,
+				C4B7339A25A3CED100DD5B46 /* chirper */,
 			);
 		};
 /* End PBXProject section */
@@ -550,7 +550,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		C4B7339625A3CED100DD5B46 /* Build configuration list for PBXProject "shitter" */ = {
+		C4B7339625A3CED100DD5B46 /* Build configuration list for PBXProject "chirper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C4B733A825A3CED600DD5B46 /* Debug */,
@@ -559,7 +559,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C4B733AA25A3CED600DD5B46 /* Build configuration list for PBXNativeTarget "shitter" */ = {
+		C4B733AA25A3CED600DD5B46 /* Build configuration list for PBXNativeTarget "chirper" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				C4B733AB25A3CED600DD5B46 /* Debug */,
