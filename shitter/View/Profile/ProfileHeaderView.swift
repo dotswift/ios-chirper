@@ -2,8 +2,9 @@ import SwiftUI
 import Kingfisher
 
 struct ProfileHeaderView: View {
-    let viewModel: ProfileViewModel
+    @State var selectedFilter: TweetFilterOptions = .tweets
     @Binding var isFollowed: Bool // binding var cant be initialized
+    let viewModel: ProfileViewModel
     
     var body: some View {
         VStack {
@@ -50,6 +51,7 @@ struct ProfileHeaderView: View {
             
             ProfileActionButtonView(viewModel: viewModel, isFollowed: $isFollowed)
             
+
             Spacer()
         }
     }

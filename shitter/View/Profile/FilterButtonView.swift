@@ -2,14 +2,14 @@ import SwiftUI
 
 enum TweetFilterOptions: Int, CaseIterable { // CaseIterable means we can iterate through with For Loop
     case tweets
-    case replies
     case likes
+//  case replies
     
     var title: String {
         switch self {
         case .tweets: return "Tweets"
-        case .replies: return "Tweets & Replies"
         case .likes: return "Likes"
+//      case .replies: return "Tweets & Replies"
         }
     }
 }
@@ -19,7 +19,7 @@ struct FilterButtonView: View {
     
     private let underlineWidth = UIScreen.main.bounds.width / CGFloat(TweetFilterOptions.allCases.count)
     
-    private var padding: CGFloat {
+     private var padding: CGFloat {
         let rawValue = CGFloat(selectedOption.rawValue)
         let count = CGFloat(TweetFilterOptions.allCases.count)
         return(UIScreen.main.bounds.width / count * rawValue) + 16
