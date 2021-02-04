@@ -38,7 +38,7 @@
 		C4776CFA25AFF72E007AD28B /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4776CF925AFF72E007AD28B /* ProfileViewModel.swift */; };
 		C4A7D38625C60B8400B1438E /* TweetActionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7D38525C60B8400B1438E /* TweetActionViewModel.swift */; };
 		C4A7D38A25C657F600B1438E /* LazyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4A7D38925C657F600B1438E /* LazyView.swift */; };
-		C4B7339F25A3CED100DD5B46 /* shitterApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B7339E25A3CED100DD5B46 /* shitterApp.swift */; };
+		C4B7339F25A3CED100DD5B46 /* chirperApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B7339E25A3CED100DD5B46 /* chirperApp.swift */; };
 		C4B733A125A3CED100DD5B46 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4B733A025A3CED100DD5B46 /* ContentView.swift */; };
 		C4B733A325A3CED600DD5B46 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B733A225A3CED600DD5B46 /* Assets.xcassets */; };
 		C4B733A625A3CED600DD5B46 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4B733A525A3CED600DD5B46 /* Preview Assets.xcassets */; };
@@ -83,7 +83,7 @@
 		C4A7D38525C60B8400B1438E /* TweetActionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TweetActionViewModel.swift; sourceTree = "<group>"; };
 		C4A7D38925C657F600B1438E /* LazyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LazyView.swift; sourceTree = "<group>"; };
 		C4B7339B25A3CED100DD5B46 /* chirper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = chirper.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		C4B7339E25A3CED100DD5B46 /* shitterApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shitterApp.swift; sourceTree = "<group>"; };
+		C4B7339E25A3CED100DD5B46 /* chirperApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = chirperApp.swift; sourceTree = "<group>"; };
 		C4B733A025A3CED100DD5B46 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C4B733A225A3CED600DD5B46 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C4B733A525A3CED600DD5B46 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -160,7 +160,7 @@
 		C4B7339225A3CED100DD5B46 = {
 			isa = PBXGroup;
 			children = (
-				C4B7339D25A3CED100DD5B46 /* shitter */,
+				C4B7339D25A3CED100DD5B46 /* chirper */,
 				C4B7339C25A3CED100DD5B46 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -173,20 +173,20 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C4B7339D25A3CED100DD5B46 /* shitter */ = {
+		C4B7339D25A3CED100DD5B46 /* chirper */ = {
 			isa = PBXGroup;
 			children = (
 				C408F1FA25AA756C00E52A73 /* Utilities */,
 				C4B733B325A3F49000DD5B46 /* Model  */,
 				C4B733B225A3F47B00DD5B46 /* View */,
 				C4B733B125A3F47300DD5B46 /* ViewModels */,
-				C4B7339E25A3CED100DD5B46 /* shitterApp.swift */,
+				C4B7339E25A3CED100DD5B46 /* chirperApp.swift */,
 				C4B733A225A3CED600DD5B46 /* Assets.xcassets */,
 				C4B733A725A3CED600DD5B46 /* Info.plist */,
 				C4776CDC25ABEF90007AD28B /* GoogleService-Info.plist */,
 				C4B733A425A3CED600DD5B46 /* Preview Content */,
 			);
-			path = shitter;
+			path = chirper;
 			sourceTree = "<group>";
 		};
 		C4B733A425A3CED600DD5B46 /* Preview Content */ = {
@@ -362,7 +362,7 @@
 				C408F1F725AA6DDF00E52A73 /* NewTweetView.swift in Sources */,
 				C4776CFA25AFF72E007AD28B /* ProfileViewModel.swift in Sources */,
 				C408F1F325A9305300E52A73 /* FilterButtonView.swift in Sources */,
-				C4B7339F25A3CED100DD5B46 /* shitterApp.swift in Sources */,
+				C4B7339F25A3CED100DD5B46 /* chirperApp.swift in Sources */,
 				C46B335625B69AED00727342 /* UploadTweetViewModel.swift in Sources */,
 				C408F20F25ABA8BF00E52A73 /* ImagePicker.swift in Sources */,
 				C4B733D625A7FF6F00DD5B46 /* ChatBubble.swift in Sources */,
@@ -509,16 +509,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"shitter/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"chirper/Preview Content\"";
 				DEVELOPMENT_TEAM = CH8XJS4375;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = shitter/Info.plist;
+				INFOPLIST_FILE = chirper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.derekquinn.shitter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.derekquinn.chirper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -531,16 +531,16 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"shitter/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"chirper/Preview Content\"";
 				DEVELOPMENT_TEAM = CH8XJS4375;
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = shitter/Info.plist;
+				INFOPLIST_FILE = chirper/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.derekquinn.shitter;
+				PRODUCT_BUNDLE_IDENTIFIER = com.derekquinn.chirper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

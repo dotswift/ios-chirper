@@ -3,7 +3,7 @@ import  Firebase
 
 // Everything is routed through here instead of App / Scene Delegate
 @main
-struct shitterApp: App {
+struct chirperApp: App {
     
     init(){
         FirebaseApp.configure()
